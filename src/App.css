@@ -1,38 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nanum Gothic';
+}
+
+body {
+  background-color: rgb(219, 210, 210);
+  width: 100%;
+  height: 100%;
+}
+
 .App {
+  position: relative;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  margin-top:180px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container {
+  width: 500px;
+  height: 600px;
+  background-color: rgb(22, 24, 23);
+  display: inline-block;
+  width: 50%;
+  border: 1px;
+  border-radius: 10px;
+  height: 600px;
+  line-height: 50px;
+  padding-top: 190px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+  width: 250px;
+  height: 30px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn {
+  position: relative;
+  top: 3px;
+  margin-left: 10px;
+  width: 80px;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+  background: rgb(17, 161, 17);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: yellow;
+  color: black;
+}
+
+.result {
+  margin-top: 30px;
+  font-size: 40px;
+  color: yellow;
+}
+
+@media screen and (max-width:1078px){
+  .result {
+    font-size: 30px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 767px){
+  .form {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+  }
+
+  .input {
+    width: 200px;
+  }
+
+  .btn {
+    display: block;
+    margin: auto;
+  }
+
+  .result {
+    font-size: 20px;
   }
 }
